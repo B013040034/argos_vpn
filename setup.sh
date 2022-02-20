@@ -16,8 +16,8 @@ if [[ $answer = [cC] ]]; then
 fi
 
 mkdir ~/.config/argos
-cp $SCRIPT_DIR/vpn.sh ~/.config/argos/vpn.sh
-sudo chmod 777 ~/.config/argos/vpn.sh
+cp $SCRIPT_DIR/vpn.3s+.sh ~/.config/argos/vpn.3s+.sh
+sudo chmod 777 ~/.config/argos/vpn.3s+.sh
 
 case $answer in
   [yY]* )
