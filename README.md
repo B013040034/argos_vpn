@@ -1,4 +1,7 @@
-### prepare
+# Feature
+vpn connect button in linux system top bar
+quick connect vpn and disconnect vpn
+### Prepare
 put ``` vpn_connect.sh ``` on ~/ and check it works
 
 ### Usage
