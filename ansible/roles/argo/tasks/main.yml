@@ -1,0 +1,20 @@
+- name: install gnome-tweaks
+  apt:
+    name:
+      - gnome-tweaks
+    state: latest
+  become: yes
+
+- name: clone argos
+  become: no
+  git:
+    repo: https://github.com/p-e-w/argos.git
+    dest: "{{ DIR }}"
+
+
+- name: Autoware (install egm2008-1)
+  shell: geographiclib-get-geoids egm2008-1
+  become: yes
+
+
+  
