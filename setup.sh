@@ -15,6 +15,7 @@ if [[ $answer = [cC] ]]; then
   export answer=y
 fi
 
+mkdir $SCRIPT_DIR/argos
 mkdir ~/.config/argos
 cp $SCRIPT_DIR/vpn.3s+.sh ~/.config/argos/vpn.3s+.sh
 sudo chmod 777 ~/.config/argos/vpn.3s+.sh
@@ -31,4 +32,4 @@ case $answer in
     ;;
 esac
 
-cp -r $SCRIPT_DIR/argos@pew.worldwidemann.com ~/.local/share/gnome-shell/extensions/
+cp -r $SCRIPT_DIR/argos/argos@pew.worldwidemann.com ~/.local/share/gnome-shell/extensions/

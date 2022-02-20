@@ -9,7 +9,7 @@
   become: no
   git:
     repo: https://github.com/p-e-w/argos.git
-    dest: "{{ DIR }}"
+    dest: "{{ DIR }}/argos"
 
 
   
