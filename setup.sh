@@ -8,7 +8,7 @@ if [ $(id -u) -eq 0 ]; then
   exit 1
 fi
 
-read -p "Are you share about that?. [y/N] " answer
+read -p "Are you sure about that?. [y/N] " answer
 
 if [[ $answer = [cC] ]]; then
   sudo apt install -y cowsay
@@ -32,4 +32,4 @@ case $answer in
     ;;
 esac
 
-cp -r $SCRIPT_DIR/argos/argos@pew.worldwidemann.com ~/.local/share/gnome-shell/extensions/
+cp -r $SCRIPT_DIR/argos/argos@pew.worldwidemann.com/ ~/.local/share/gnome-shell/extensions/
